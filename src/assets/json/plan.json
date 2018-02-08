@@ -1,0 +1,100 @@
+{
+	"title": "项目计划书标题",
+    "budget": {
+      "description": "这里是开发报价和周期的说明\r\n这里是第二段",
+      "items": [
+        {
+          "name": "报价项目1",
+          "description": "项目说明",
+          "days": 60,
+          "price": 30000
+        },
+        {
+          "name": "报价项目2",
+          "description": "项目说明",
+          "days": 60,
+          "price": 30000
+        },
+        {
+          "name": "报价项目3",
+          "description": "项目说明",
+          "days": 60,
+          "price": 30000
+        },
+        {
+          "name": "总价",
+          "description": "",
+          "days": 60,
+          "price": 90000
+        }
+      ]
+    },
+    "items": [
+      {
+        "type": "content",
+        "title": "项目概要",
+        "content": "多段文字多段文字多段文字多段文字多段文字多段文字多段文字多段文字多段文字多段文字多段文字多段文\r\n多段文字多段文字多段文字多段文字多段文字多段文字多段文字多段文字多段文字多段文字多段文字多段文字"
+      },
+      {
+        "type": "pageBreaker"
+      },
+      {
+        "type": "content",
+        "title": "流程图",
+        "content": "多段文字多段文字多段文字多段文字多段文字多段文字多段文字多段文字多段文字多段文字多段文字多段文",
+        "img":"http://osmnxqxc2.bkt.clouddn.com/3e038b13-8028-4eb3-8d39-1e15bb114a32.png"
+      },
+      {
+        "type": "pageBreaker"
+      },
+      {
+        "type": "content",
+        "title": "功能列表",
+        "table": {
+          "header": [
+            "模块",
+            "功能",
+            "子功能"
+          ],
+          "body": [
+            {
+              "name": "模块",
+              "children": [
+                {
+                  "name": "功能",
+                  "children": [
+                    "子功能",
+                    "子功能",
+                    "子功能",
+                    "子功能",
+                    "子功能"
+                  ]
+                },
+                {
+                  "name": "功能",
+                  "children": [
+                    "子功能",
+                    "子功能",
+                    "test"
+                  ]
+                },
+                {
+                  "name": "功能",
+                  "children": [
+                    "子功能",
+                    "子功能",
+                    "子功能",
+                    "子功能",
+                    "子功能"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "pageBreaker"
+      }
+    ]
+}

@@ -1,0 +1,46 @@
+/*
+* @desc mixin module
+* @version 0.0.1
+*/
+
+/* ---------- triangle mixin ---------- */
+@mixin triangle ($size, $color, $direction) {
+  height: 0;
+  width: 0;
+
+  @if ($direction == up) or ($direction == down) or ($direction == right) or ($direction == left) {
+    border-color: transparent;
+    border-style: solid;
+    border-width: $size/2;
+
+    @if $direction == up {
+      border-bottom-color: $color;
+
+    } @else if $direction == right {
+      border-left-color:   $color;
+
+    } @else if $direction == down {
+      border-top-color:    $color;
+
+    } @else if $direction == left {
+      border-right-color:  $color;
+    }
+  }
+}
+
+/* ---------- center ---------- */
+@mixin center ($direction) {
+  position: absolute;
+
+  @if $direction == h {
+    left: 50%;
+    transform: translateX(-50%);
+  } @else if $direction == v {
+    top: 50%;
+    transform: translateY(-50%);
+  } @else if $direction == all {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

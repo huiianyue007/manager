@@ -1,0 +1,79 @@
+@import './_variables.scss';
+@import "./style.scss";
+
+html {
+  min-height: 100%;
+  box-sizing: border-box;
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+}
+ul{margin:0}
+body {
+  min-height: 100%;
+  margin: 0;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: $backgroundColor;
+  color: $textColor;
+  @include font-hei;
+  @extend .body-1;
+}
+
+[tabindex='-1']:focus {
+  outline: none;
+}
+
+ul>li{
+  list-style: none;
+}
+/*  Fluid Media
+   ========================================================================== */
+
+audio,
+img,
+svg,
+object,
+embed,
+canvas,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  font-style: italic;
+  vertical-align: middle;
+}
+
+
+/*  Suppress the focus outline on links that cannot be accessed via keyboard.
+    This prevents an unwanted focus outline from appearing around elements
+    that might still respond to pointer events.
+   ========================================================================== */
+
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+
+/*  Links & Buttons
+   ========================================================================== */
+
+a:not(.md-button):not(.md-bottom-bar-item) {
+  text-decoration: none;
+}
+
+button {
+  &:focus {
+    outline: none;
+  }
+}
+input,textarea{
+  outline:none;
+}

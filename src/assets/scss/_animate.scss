@@ -1,0 +1,8 @@
+/*
+ * @desc css animate module
+ * @version 0.0.1
+*/
+
+@mixin transition($during: .3s, $type: ease) {
+  transition: all $during $type;
+}
